@@ -27,9 +27,13 @@ let painter = new Painter({
         enterTime: 2000,
         showTime: 2000,
       }),
+      ... //more picture
     ],
   }),
   canvansEl
 });
+
+painter.pause()
+// use painter.start() if no immediate in config
 
 ```
