@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import { ImageInstrument, Instrument, Painter } from "../banner";
+import One from "./assets/1.jpg";
+import Two from "./assets/2.jpg";
 const root = ref<HTMLCanvasElement>();
 let painter = new Painter({
   immediate: true,
@@ -11,12 +13,12 @@ let painter = new Painter({
     stages: [
       new ImageInstrument({
         initIndex: 1,
-        img: "http://www.html5canvastutorials.com/demos/assets/darth-vader.jpg",
+        img: One,
         enterTime: 2000,
         showTime: 2000,
       }),
       new ImageInstrument({
-        img: "http://www.html5canvastutorials.com/demos/assets/darth-vader.jpg",
+        img: Two,
         enterTime: 2000,
         showTime: 2000,
       }),
